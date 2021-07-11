@@ -1,2 +1,17 @@
 # knight_tour
- knight tour simulator
+ knight tour simulator(기사의 여행 시뮬레이터)
+
+기사의 여행 문제는 체스판 위의 '나이트'가 이동 가능한 방향으로 계속 움직여 그림과 같이 체스판 전체를 모두 한 번씩만 방문하는 경로를 찾는 문제이다.
+
+![Knights-Tour-Animation](https://user-images.githubusercontent.com/84119957/125192173-6cdccb80-e281-11eb-8c89-4b4cdf19ada5.gif)
+
+'나이트'가 체스판 전체를 방문한 후 시작 위치로 다시 돌아오는 경로를 닫힌 여행(Closed tour), 시작 위치로 다시 돌아올 수 없는 경로를 열린 여행(Open tour)라고 하며 이 코드는 열린 여행을 구현하였다.
+
+코드를 구현하는 과정에서 Warnsdorf's rule를 참고하였다.
+Warnsdorf's rule는 나이트가 이동할 수 있는 위치들 중에서 그다음 이동 가능한 위치가 적은 곳을 우선하여 이동하라는 것이다.
+
+![kn2](https://user-images.githubusercontent.com/84119957/125192467-06f14380-e283-11eb-8547-84d2e813534d.jpg)
+
+이해를 돕기 위해 위의 그림을 보면 현재 나이트가 이동할 수 있는 위치는 총 6곳이 있는데 그다음 이동 가능한 위치가 2개로 제일 적은 곳을 우선하여 이동하라는 것이다.
+
+위의 시뮬레이션에서는 크기가 8x8인 체스판에서 나이트가 들리지 않은 곳을 0, 들렸던 곳을 1, 나이트를 2로 표현하였다.
