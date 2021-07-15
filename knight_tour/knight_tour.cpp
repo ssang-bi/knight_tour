@@ -44,7 +44,7 @@ int main(void){
 }
 
 void print(int x, int y) {
-	cout << "------------- (" << x + 1 << ", " << y + 1 << ")\n";
+	cout << "------------- (" << x << ", " << y << ")\n";
 	for (int y = 0; y < 8; y++) {
 		for (int x = 0; x < 8; x++) cout << board[y][x] << " ";  // 
 		cout << endl;
