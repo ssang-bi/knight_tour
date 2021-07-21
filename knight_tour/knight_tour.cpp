@@ -23,7 +23,7 @@ int main(void){
 		 << "   0 <= x <= 7       0 <= y <= 7   \n";
 	while (run == 1) {
 		for (int i = 0; i < WIDTH; i++) memset(board[i], 0, sizeof(board[i]));
-		cout << "\nEnter the knight's location(x, y) : ";
+		cout << "\nEnter the knight's location(example -> x y) : ";
 		cin >> x >> y;
 		if (x < 0 || x > 7 || y < 0 || y > 7) {
 			cout << "\nerror: insert wrong location\n"
